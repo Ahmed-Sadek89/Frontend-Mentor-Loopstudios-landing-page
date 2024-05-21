@@ -1,9 +1,17 @@
 <template>
-  <div class="py-2 px-3 mx-auto w-full bg-gray-400 text-black">hello world</div>
+  <MainSection />
+  <section>leader</section>
+  <section>creation</section>
+  <footer>footer</footer>
 </template>
 
 <script lang="ts">
 import { defineComponent } from "vue";
+import MainSection from "@/components/MainSection.vue";
 
-export default defineComponent({});
+export default defineComponent({
+  components: {
+    MainSection
+  }
+});
 </script>
