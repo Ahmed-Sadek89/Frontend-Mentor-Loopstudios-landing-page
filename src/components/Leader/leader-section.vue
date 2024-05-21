@@ -1,5 +1,7 @@
 <template>
-  <section class="relative flex flex-col lg:flex-row items-end pt-20 lg:pt-40 pb-20">
+  <section
+    class="relative flex flex-col lg:flex-row items-end py-20 lg:py-40"
+  >
     <div class="w-full lg:w-3/4">
       <img
         src="@/assets/desktop/image-interactive.jpg"
@@ -34,6 +36,7 @@
 import { defineComponent } from "vue";
 
 export default defineComponent({
+  name: "LeaderSection",
   setup() {
     return {};
   },

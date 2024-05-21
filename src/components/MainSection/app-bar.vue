@@ -24,7 +24,7 @@
 import { defineComponent } from "vue";
 
 export default defineComponent({
-  name: "Appbar",
+  name: "AppbarSection",
   setup() {
     const links = ["About", "Careers", "Events", "Products", "Support"];
     return { links };

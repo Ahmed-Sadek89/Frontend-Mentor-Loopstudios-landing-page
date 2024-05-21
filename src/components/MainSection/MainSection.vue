@@ -1,7 +1,7 @@
 <template>
   <main class="bg-center bg-cover w-full h-screen">
     <div class="custom-container h-full">
-      <Appbar />
+      <AppbarSection />
       <HeroSection />
     </div>
   </main>
@@ -9,13 +9,13 @@
 
 <script lang="ts">
 import { defineComponent } from "vue";
-import Appbar from "@/components/MainSection/Appbar.vue";
+import AppbarSection from "@/components/MainSection/app-bar.vue";
 import HeroSection from "@/components/MainSection/HeroSection.vue";
 import "./style.css";
 
 export default defineComponent({
   components: {
-    Appbar,
+    AppbarSection,
     HeroSection,
   },
   setup() {

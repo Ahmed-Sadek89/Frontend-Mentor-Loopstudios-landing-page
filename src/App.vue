@@ -1,21 +1,25 @@
 <template>
   <MainSection />
   <div class="custom-container">
-    <Leader />
-    <section>creation</section>
+    <LeaderSection />
+    <CreationSection />
   </div>
-  <footer>footer</footer>
+  <FooterSection />
 </template>
 
 <script lang="ts">
 import { defineComponent } from "vue";
 import MainSection from "@/components/MainSection/MainSection.vue";
-import Leader from "@/components/Leader.vue";
+import LeaderSection from "@/components/Leader/leader-section.vue";
+import CreationSection from "@/components/Creation/creation-section.vue";
+import FooterSection from "./components/Footer/footer-section.vue";
 
 export default defineComponent({
   components: {
     MainSection,
-    Leader,
+    LeaderSection,
+    CreationSection,
+    FooterSection,
   },
 });
 </script>
