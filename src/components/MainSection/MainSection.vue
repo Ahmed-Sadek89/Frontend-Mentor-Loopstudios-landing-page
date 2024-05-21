@@ -9,8 +9,8 @@
 
 <script lang="ts">
 import { defineComponent } from "vue";
-import Appbar from "@/components/Appbar.vue";
-import HeroSection from "@/components/HeroSection.vue";
+import Appbar from "@/components/MainSection/Appbar.vue";
+import HeroSection from "@/components/MainSection/HeroSection.vue";
 import "./style.css";
 
 export default defineComponent({
