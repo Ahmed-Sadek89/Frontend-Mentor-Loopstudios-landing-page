@@ -2,10 +2,14 @@
   <footer class="py-16 bg-black text-white">
     <div class="custom-container">
       <div
-        class="flex flex-col md:flex-row w-full items-center md:items-start  justify-between"
+        class="flex flex-col md:flex-row w-full items-center md:items-start justify-between"
       >
         <div class="flex flex-col gap-2 items-center md:items-start">
-          <img src="@/assets/logo.svg" alt="logo" class="w-full md:w-[100px] h-auto" />
+          <img
+            src="@/assets/logo.svg"
+            alt="logo"
+            class="w-full md:w-[100px] h-auto"
+          />
           <ul
             class="flex flex-col md:flex-row items-center gap-x-6 text-white font-[400]"
           >
@@ -43,7 +47,9 @@
               class="cursor-pointer pb-3 border-b-2 border-b-transparent transition duration-300 hover:border-b-white"
             />
           </div>
-          <span class="text-sm text-gray-400"> © 2021 Loopstudios. All rights reserved.</span>
+          <span class="text-sm text-gray-400">
+            © 2021 Loopstudios. All rights reserved.</span
+          >
         </div>
       </div>
     </div>

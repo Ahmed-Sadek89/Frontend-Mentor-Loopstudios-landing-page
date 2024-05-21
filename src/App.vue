@@ -1,14 +1,16 @@
 <template>
-  <MainSection />
-  <div class="custom-container">
-    <LeaderSection />
-    <CreationSection />
+  <div :class="layoutStyle">
+    <MainSection />
+    <div class="custom-container">
+      <LeaderSection />
+      <CreationSection />
+    </div>
+    <FooterSection />
   </div>
-  <FooterSection />
 </template>
 
 <script lang="ts">
-import { defineComponent } from "vue";
+import { defineComponent, provide, ref } from "vue";
 import MainSection from "@/components/MainSection/MainSection.vue";
 import LeaderSection from "@/components/Leader/leader-section.vue";
 import CreationSection from "@/components/Creation/creation-section.vue";
@@ -20,6 +22,14 @@ export default defineComponent({
     LeaderSection,
     CreationSection,
     FooterSection,
+  },
+  setup() {
+    const layoutStyle = ref("");
+    const SetLayoutStyle = () => {
+      layoutStyle.value = layoutStyle.value === "" ? "h-screen overflow-hidden" : "";
+    };
+    provide("SetLayoutStyle", SetLayoutStyle);
+    return { layoutStyle };
   },
 });
 </script>
